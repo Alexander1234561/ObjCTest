@@ -17,8 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.image.image = [UIImage imageWithData: [APIClass getPhotoFromURL: self.str]];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    self.image.image = [UIImage imageWithData:  self.data];
 }
 
 @end

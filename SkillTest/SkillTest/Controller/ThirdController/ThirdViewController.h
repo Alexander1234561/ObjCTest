@@ -1,5 +1,5 @@
 //
-//  CollectionViewCell.h
+//  ThirdViewController.h
 //  SkillTest
 //
 //  Created by Александр on 16.02.2021.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CollectionViewCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *image;
 
+@interface ThirdViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property NSData *data;
 @end
 
 

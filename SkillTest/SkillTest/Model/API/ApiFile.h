@@ -12,8 +12,9 @@
 
 typedef void (^TagDownloadBlock) (NSMutableArray* arr);
 typedef void (^PhotosDownloadBlock) (NSMutableArray* arr);
+typedef void (^photoBlock) (NSData* data);
 +(void)getTags:(TagDownloadBlock)completionBlock;
 +(void)getPhotos: (NSString*)str : (PhotosDownloadBlock)completionBlock;
-+(NSData *)getPhotoFromURL: (NSString*)str;
++(void)getPhotosFromURL: (photoBlock)completionBlock : (NSString*)str;
 
 @end

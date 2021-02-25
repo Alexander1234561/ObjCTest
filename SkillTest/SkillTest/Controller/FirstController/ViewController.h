@@ -10,7 +10,6 @@
 #import "ApiFile.h"
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
-
 @property (strong, nonatomic) IBOutlet UITableView *mytableview;
 @property NSMutableArray *arr;
 typedef void (^TagDownloadBlock) (NSMutableArray* arr);

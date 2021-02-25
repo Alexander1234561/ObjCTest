@@ -71,15 +71,11 @@
 			isa = PBXGroup;
 			children = (
 				1F7CAF7925DC792B005A6792 /* Delegate */,
-				1F7CAF7425DC77E4005A6792 /* API */,
-				1F7CAF7625DC781A005A6792 /* FirstController */,
-				1F7CAF7525DC77F3005A6792 /* SecondController */,
-				1F7CAF7725DC7846005A6792 /* ThirdController */,
+				1FD270DA25E7E7C2005D717C /* Model */,
 				1FAF81B225DCCB5B00EC04F3 /* View */,
-				1F7CAF5925D5EB52005A6792 /* Assets.xcassets */,
-				1F7CAF5B25D5EB52005A6792 /* LaunchScreen.storyboard */,
-				1F7CAF5E25D5EB52005A6792 /* Info.plist */,
+				1FD270DB25E7E7CF005D717C /* Controller */,
 				1F7CAF5F25D5EB52005A6792 /* main.m */,
+				1F7CAF5E25D5EB52005A6792 /* Info.plist */,
 			);
 			path = SkillTest;
 			sourceTree = "<group>";
@@ -135,8 +131,28 @@
 			isa = PBXGroup;
 			children = (
 				1F7CAF5625D5EB4E005A6792 /* Main.storyboard */,
+				1F7CAF5925D5EB52005A6792 /* Assets.xcassets */,
+				1F7CAF5B25D5EB52005A6792 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1FD270DA25E7E7C2005D717C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F7CAF7425DC77E4005A6792 /* API */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FD270DB25E7E7CF005D717C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F7CAF7625DC781A005A6792 /* FirstController */,
+				1F7CAF7525DC77F3005A6792 /* SecondController */,
+				1F7CAF7725DC7846005A6792 /* ThirdController */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

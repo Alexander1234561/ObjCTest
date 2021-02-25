@@ -34,9 +34,8 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"image" forIndexPath:indexPath];
-    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-    cell.image.image = [UIImage imageWithData: [APIClass getPhotoFromURL:self.arr[indexPath.row]]];
-    }];
+    
+    cell.image.image = [UIImage imageWithData: self.arr[indexPath.row]];
     
     return cell;
 }
@@ -45,7 +44,7 @@
 
 -(void)getListPhotos {
     PhotosDownloadBlock completionBlock = ^(NSMutableArray* array){
-        self.arr = array;
+        self.arr = [array mutableCopy];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.myCollection reloadData];
         });
@@ -59,11 +58,10 @@
     if ([segue.identifier isEqualToString:@"segue2"]) {
         NSIndexPath *selectedIndexPath = [self.myCollection indexPathForCell:sender];
         ThirdViewController *sv = (ThirdViewController *)segue.destinationViewController;
-        sv.str = self.arr[selectedIndexPath.row];
+        sv.data = self.arr[selectedIndexPath.row];
     }
 }
 
-- (IBAction)unwindToTag:(UIStoryboardSegue *)unwindSegue
-{}
+- (IBAction)unwindToTag:(UIStoryboardSegue *)unwindSegue {}
 
 @end
