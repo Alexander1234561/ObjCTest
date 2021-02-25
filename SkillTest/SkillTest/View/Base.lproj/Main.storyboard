@@ -103,9 +103,9 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dgc-Je-ZlR">
-                                <rect key="frame" x="0.0" y="183.5" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="193" width="375" height="281"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="OkI-1R-s0u"/>
+                                    <constraint firstAttribute="width" secondItem="Dgc-Je-ZlR" secondAttribute="height" multiplier="4:3" id="QaI-Uz-VAd"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -113,7 +113,7 @@
                         <constraints>
                             <constraint firstItem="Dgc-Je-ZlR" firstAttribute="centerX" secondItem="mrn-3a-Vyc" secondAttribute="centerX" id="3gX-n3-mQZ"/>
                             <constraint firstItem="7R0-SK-vU5" firstAttribute="leading" secondItem="y14-ud-ocU" secondAttribute="leading" constant="15" id="DGT-Vz-5ra"/>
-                            <constraint firstItem="y14-ud-ocU" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Dgc-Je-ZlR" secondAttribute="bottom" constant="15" id="FR1-ff-aeL"/>
+                            <constraint firstItem="y14-ud-ocU" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Dgc-Je-ZlR" secondAttribute="bottom" constant="40" id="FR1-ff-aeL"/>
                             <constraint firstItem="Dgc-Je-ZlR" firstAttribute="centerY" secondItem="mrn-3a-Vyc" secondAttribute="centerY" id="JG8-qg-XTL"/>
                             <constraint firstItem="7R0-SK-vU5" firstAttribute="top" secondItem="y14-ud-ocU" secondAttribute="top" constant="10" id="Kvn-5x-3SL"/>
                             <constraint firstItem="y14-ud-ocU" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7R0-SK-vU5" secondAttribute="trailing" symbolic="YES" id="LWc-ZC-Mpw"/>

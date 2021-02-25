@@ -93,17 +93,13 @@
 +(void) getPhotosFromURL: (photoBlock)completionBlock : (NSString*)str{
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    NSMutableArray *dataArr = [NSMutableArray array];
         
         NSURL *url = [[NSURL alloc] initWithString:str];
         dispatch_async(queue, ^{
         [[NSURLSession.sharedSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-            if (data != nil) {
-                [dataArr addObject:data];
-                
-            }
+            
             completionBlock(data);
+            
         }] resume];
             });
 }
